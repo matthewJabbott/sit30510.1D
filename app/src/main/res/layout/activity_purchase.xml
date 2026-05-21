@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_purchase"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:gravity="center"
+        android:text="Choose Your Learning Plan"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnTierStarter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#A5D6A7"
+        android:text="🌱 Starter - $2.99/mo\n• Basic AI Hints\n• Monthly Progress Report"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:paddingVertical="16dp" />
+
+    <Button
+        android:id="@+id/btnTierIntermediate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#64B5F6"
+        android:text="📚 Intermediate - $4.99/mo\n• Unlimited AI Hints\n• Detailed Analytics\n• Topic Recommendations"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:paddingVertical="16dp" />
+
+    <Button
+        android:id="@+id/btnTierAdvanced"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="#CE93D8"
+        android:text="🚀 Advanced - $7.99/mo\n• All Intermediate Features\n• 1-on-1 AI Tutoring\n• Priority Support"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        android:paddingVertical="16dp" />
+
+    <TextView
+        android:id="@+id/tvPremiumStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Current Status: Free Tier"
+        android:textStyle="italic" />
+
+    <Button
+        android:id="@+id/btnPurchase"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:enabled="false"
+        android:text="Select a Plan to Purchase" />
+
+</LinearLayout>

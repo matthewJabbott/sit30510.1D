@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="32dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_title"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#212121"
+            android:layout_marginBottom="24dp" />
+
+        <EditText
+            android:id="@+id/etRegUser"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/hint_username"
+            android:inputType="textPersonName"
+            android:autofillHints="username"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etRegEmail"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etRegEmailVerify"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/hint_verify_email"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etRegPass"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etRegPassVerify"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/hint_verify_password"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:layout_marginBottom="12dp" />
+
+        <EditText
+            android:id="@+id/etRegPhone"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:hint="@string/hint_phone"
+            android:inputType="phone"
+            android:autofillHints="phoneNumber"
+            android:layout_marginBottom="32dp" />
+
+        <Button
+            android:id="@+id/btnRegisterSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="@string/btn_create_assistant"
+            android:backgroundTint="#00E676"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</ScrollView>
