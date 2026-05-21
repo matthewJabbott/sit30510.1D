@@ -11,12 +11,12 @@ load_dotenv("gemini.env")
 
 # Initialize with stable v1
 client = genai.Client(
-    api_key="AIzaSyAe6dAI5ZboC09xC6mzm_SnoW1hdEomjME",
+    api_key="key",
     http_options={'api_version': 'v1'}
 )
 
 # Initialize Stripe
-stripe.api_key = "sk_test_51TWp2JAH73KfhxuxIUTPRIHMfVswEF0D7tdDdsCn5L6euBR2RYkpXRbKaYDZpXELI8t5Yq1DFyb5ZsTZMaTus7bJ00AGjXq3M5"
+stripe.api_key = "key"
 
 app = Flask(__name__)
 CORS(app)

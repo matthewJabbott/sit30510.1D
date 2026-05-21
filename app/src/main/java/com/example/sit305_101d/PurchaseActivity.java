@@ -36,7 +36,7 @@ public class PurchaseActivity extends AppCompatActivity {
         // Initialize Stripe Configuration
         PaymentConfiguration.init(
                 this,
-                "pk_test_51TWp2JAH73KfhxuxICi3Hwqy0tDbgzJl3Tj6kEBO1VTKJJLHab3P8juV2yyw81dfzV3nR0PJuM1rcSGsNId3UuTN00vSJ87BYZ"
+                "key"
         );
 
         paymentSheet = new PaymentSheet(this, this::onPaymentResult);
